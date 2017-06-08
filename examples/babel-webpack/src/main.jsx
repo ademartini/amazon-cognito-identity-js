@@ -1,4 +1,4 @@
-import {Config, CognitoIdentityCredentials} from "aws-sdk";
+import {Config, CognitoIdentityCredentials} from "aws-sdk/dist/aws-sdk-react-native";
 import {
   CognitoUserPool,
   CognitoUserAttribute

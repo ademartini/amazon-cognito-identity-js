@@ -18,11 +18,11 @@
 
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("aws-sdk/global"), require("aws-sdk/clients/cognitoidentityserviceprovider"));
+		module.exports = factory(require("aws-sdk/dist/aws-sdk-react-native/global"), require("aws-sdk/dist/aws-sdk-react-native/clients/cognitoidentityserviceprovider"));
 	else if(typeof define === 'function' && define.amd)
-		define(["aws-sdk/global", "aws-sdk/clients/cognitoidentityserviceprovider"], factory);
+		define(["aws-sdk/dist/aws-sdk-react-native/global", "aws-sdk/dist/aws-sdk-react-native/clients/cognitoidentityserviceprovider"], factory);
 	else if(typeof exports === 'object')
-		exports["AmazonCognitoIdentity"] = factory(require("aws-sdk/global"), require("aws-sdk/clients/cognitoidentityserviceprovider"));
+		exports["AmazonCognitoIdentity"] = factory(require("aws-sdk/dist/aws-sdk-react-native/global"), require("aws-sdk/dist/aws-sdk-react-native/clients/cognitoidentityserviceprovider"));
 	else
 		root["AmazonCognitoIdentity"] = factory(root["AWSCognito"], root["AWSCognito"]["CognitoIdentityServiceProvider"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_12__) {
@@ -102,7 +102,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  _cognitoidentityserviceprovider2.default[key] = enhancements[key];
 	});
 
-	// The version of crypto-browserify included by aws-sdk only
+	// The version of crypto-browserify included by aws-sdk/dist/aws-sdk-react-native only
 	// checks for window.crypto, not window.msCrypto as used by
 	// IE 11 – so we set it explicitly here
 	if (typeof window !== 'undefined' && !window.crypto && window.msCrypto) {

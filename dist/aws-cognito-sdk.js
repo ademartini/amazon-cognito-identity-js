@@ -7750,7 +7750,7 @@ var util = {
 
   userAgent: function userAgent() {
     var name = util.isBrowser() ? 'js' : 'nodejs';
-    var agent = 'aws-sdk-' + name + '/' + require('./core').VERSION;
+    var agent = 'aws-sdk/dist/aws-sdk-react-native-' + name + '/' + require('./core').VERSION;
     if (name === 'nodejs') agent += ' ' + util.engine();
     return agent;
   },

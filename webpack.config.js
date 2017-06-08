@@ -27,17 +27,17 @@ var config = {
   externals: {
     // This umd context config isn't in configuration documentation, but see example:
     // https://github.com/webpack/webpack/tree/master/examples/externals
-    'aws-sdk/global': {
+    'aws-sdk/dist/aws-sdk-react-native/global': {
       root: ['AWSCognito'],
-      commonjs2: 'aws-sdk/global',
-      commonjs: 'aws-sdk/global',
-      amd: 'aws-sdk/global'
+      commonjs2: 'aws-sdk/dist/aws-sdk-react-native/global',
+      commonjs: 'aws-sdk/dist/aws-sdk-react-native/global',
+      amd: 'aws-sdk/dist/aws-sdk-react-native/global'
     },
-    'aws-sdk/clients/cognitoidentityserviceprovider': {
+    'aws-sdk/dist/aws-sdk-react-native/clients/cognitoidentityserviceprovider': {
       root: ['AWSCognito', 'CognitoIdentityServiceProvider'],
-      commonjs2: 'aws-sdk/clients/cognitoidentityserviceprovider',
-      commonjs: 'aws-sdk/clients/cognitoidentityserviceprovider',
-      amd: 'aws-sdk/clients/cognitoidentityserviceprovider'
+      commonjs2: 'aws-sdk/dist/aws-sdk-react-native/clients/cognitoidentityserviceprovider',
+      commonjs: 'aws-sdk/dist/aws-sdk-react-native/clients/cognitoidentityserviceprovider',
+      amd: 'aws-sdk/dist/aws-sdk-react-native/clients/cognitoidentityserviceprovider'
     },
   },
   plugins: [

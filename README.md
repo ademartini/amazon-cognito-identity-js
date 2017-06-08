@@ -22,7 +22,7 @@ Setup
 
 The Amazon Cognito Identity SDK for JavaScript depends on:
 
-1. The `CognitoIdentityServiceProvider` service from the [AWS SDK for JavaScript](https://github.com/aws/aws-sdk-js)
+1. The `CognitoIdentityServiceProvider` service from the [AWS SDK for JavaScript](https://github.com/aws/aws-sdk/dist/aws-sdk-react-native-js)
 
 There are two ways to install the Amazon Cognito Identity SDK for JavaScript and its dependencies,
 depending on your project setup and experience with modern JavaScript build tools:
@@ -57,7 +57,7 @@ Include all of the files in your HTML page before calling any Amazon Cognito Ide
     <script src="/path/to/aws-cognito-sdk.min.js"></script>
     <script src="/path/to/amazon-cognito-identity.min.js"></script>
     <!-- optional: only if you use other AWS services -->
-    <script src="/path/to/aws-sdk-2.6.10.js"></script>
+    <script src="/path/to/aws-sdk/dist/aws-sdk-react-native-2.6.10.js"></script>
 ```
 
 ## Using NPM and Webpack
@@ -703,7 +703,7 @@ In order to authenticate with the Amazon Cognito Identity Service, the client ne
 
 **v1.5.0:**
 * What has changed
-  * Changed webpack support to follow AWS-SDK usage.
+  * Changed webpack support to follow aws-sdk/dist/aws-sdk-react-native usage.
 
 **v1.2.0:**
 * What has changed

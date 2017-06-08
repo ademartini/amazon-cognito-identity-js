@@ -1,6 +1,6 @@
 declare module "amazon-cognito-identity-js" {
 
-    import * as AWS from "aws-sdk";
+    import * as AWS from "aws-sdk/dist/aws-sdk-react-native";
 
     export type NodeCallback<E,T> = (err?: E, result?: T) => void;
 
